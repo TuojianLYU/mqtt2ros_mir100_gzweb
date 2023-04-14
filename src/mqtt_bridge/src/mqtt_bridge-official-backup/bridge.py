@@ -4,34 +4,8 @@ from typing import Optional, Type, Dict, Union
 import inject
 import paho.mqtt.client as mqtt
 import rospy
-from .util import lookup_object, extract_values, populate_instance, get_quaternion_from_euler
 
-from std_msgs.msg import String, Bool, Int32, Float64
-from move_base_msgs.msg import MoveBaseActionGoal
-from geometry_msgs.msg import Point, Quaternion
-from math import pi
-#from mqtt_bridge.msg import MirPosition
-
-# TODO: ros_msg should be json/dict
-def format_rosmsg(msg_type, msg_dict):
-    # ROS message requires quaternion calculations from euler coordinates
-    if (msg_type == type(MoveBaseActionGoal())):
-
-        ros_msg = MoveBaseActionGoal()
-        ros_msg.goal.target_pose.header.frame_id = 'map'
-
-        target_point = Point(msg_dict['x'], msg_dict['y'], 0.0)
-
-        x, y, z, w = get_quaternion_from_euler(0, 0, msg_dict['theta'])
-        rospy.loginfo("Quaternion: [{}, {}, {}, {}]".format(x, y, z, w))
-        quaternion = Quaternion(x, y, z, w)
-
-        ros_msg.goal.target_pose.pose.position = target_point
-        ros_msg.goal.target_pose.pose.orientation = quaternion
-    else:
-        ros_msg = populate_instance(msg_dict, msg_type())
-
-    return ros_msg
+from .util import lookup_object, extract_values, populate_instance
 
 
 def create_bridge(factory: Union[str, "Bridge"], msg_type: Union[str, Type[rospy.Message]], topic_from: str,
@@ -82,25 +56,9 @@ class RosToMqttBridge(Bridge):
             self._last_published = now
 
     def _publish(self, msg: rospy.Message):
-        rospy.loginfo("extracted value before serialization: {}".format(extract_values(msg)))
-
-        # For specific topic only publish result value (int)
-        if (self._topic_to == "/move_result"):
-            try:
-                result = msg.status.status
-                payload = self._serialize(result)
-                rospy.loginfo(result)
-            except Exception as e:
-                rospy.logerr("Failed to get result status message from {}".format(type(msg)))
-                rospy.logerr(e)
-
-        else:
-            payload = self._serialize(extract_values(msg))
-            rospy.loginfo("Serialized payload:%s", payload)
-
-        rospy.loginfo("final payload to publish: {}".format(payload))
-        rospy.loginfo("type: {}".format(type(payload)))
+        payload = self._serialize(extract_values(msg))
         self._mqtt_client.publish(topic=self._topic_to, payload=payload)
+
 
 class MqttToRosBridge(Bridge):
     """ Bridge from MQTT to ROS topic
@@ -121,7 +79,6 @@ class MqttToRosBridge(Bridge):
         self._mqtt_client.message_callback_add(self._topic_from, self._callback_mqtt)
         self._publisher = rospy.Publisher(
             self._topic_to, self._msg_type, queue_size=self._queue_size)
-        rospy.loginfo("Initialization of MqttToRosBridge SUCCESSFUL")
 
     def _callback_mqtt(self, client: mqtt.Client, userdata: Dict, mqtt_msg: mqtt.MQTTMessage):
         """ callback from MQTT """
@@ -142,20 +99,8 @@ class MqttToRosBridge(Bridge):
         if self._serialize.__name__ == "packb":
             msg_dict = self._deserialize(mqtt_msg.payload, raw=False)
         else:
-            rospy.loginfo("------Deserializing-------")
-            try:
-                msg_dict = self._deserialize(mqtt_msg.payload.decode('utf-8').replace("'", '"'))
-                ros_msg = format_rosmsg(self._msg_type, msg_dict)
-                rospy.loginfo("Created ROS message")
-
-
-            except Exception as e:
-                rospy.logwarn(e)
-                rospy.loginfo("Failed to deserialize payload:")
-                raise
-
-            # populates the dictionary into the specified ROS Message
-            return ros_msg
+            msg_dict = self._deserialize(mqtt_msg.payload)
+        return populate_instance(msg_dict, self._msg_type())
 
 
 __all__ = ['create_bridge', 'Bridge', 'RosToMqttBridge', 'MqttToRosBridge']

@@ -74,17 +74,17 @@ add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg" "std_msgs/Header:mir_msgs/Event:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg" "std_msgs/Header:geometry_msgs/Point:mir_msgs/Event"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg" "std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg" "geometry_msgs/Twist:std_msgs/Header:geometry_msgs/Vector3:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg" "std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Point:mir_msgs/ExternalRobot"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg" "geometry_msgs/Twist:std_msgs/Header:geometry_msgs/Vector3:geometry_msgs/Point:geometry_msgs/Pose:mir_msgs/ExternalRobot:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Gpio.msg" NAME_WE)
@@ -109,7 +109,7 @@ add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg" "mir_msgs/HeightState:mir_msgs/BrakeState:mir_msgs/GripperState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg" "mir_msgs/GripperState:mir_msgs/BrakeState:mir_msgs/HeightState"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg" NAME_WE)
@@ -174,12 +174,12 @@ add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg" "std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg" "std_msgs/Header:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg" "std_msgs/Header:mir_msgs/PlanSegment:geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg" "std_msgs/Header:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:mir_msgs/PlanSegment:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg" NAME_WE)
@@ -209,12 +209,12 @@ add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg" "std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg" "std_msgs/Header:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg" "std_msgs/Header:mir_msgs/ResourceState:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg" "std_msgs/Header:geometry_msgs/Point:mir_msgs/ResourceState"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotMode.msg" NAME_WE)
@@ -229,7 +229,7 @@ add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg" "std_msgs/Header:mir_msgs/HookData:mir_msgs/Twist2D:mir_msgs/Trolley:mir_msgs/HookStatus:mir_msgs/Error:mir_msgs/Pose2D:mir_msgs/AngleMeasurment:mir_msgs/UserPrompt"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg" "mir_msgs/Pose2D:mir_msgs/HookStatus:mir_msgs/Error:mir_msgs/AngleMeasurment:std_msgs/Header:mir_msgs/HookData:mir_msgs/UserPrompt:mir_msgs/Twist2D:mir_msgs/Trolley"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/SafetyStatus.msg" NAME_WE)
@@ -294,12 +294,12 @@ add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg" "std_msgs/Header:geometry_msgs/Pose:mir_msgs/ResourcesState:geometry_msgs/Quaternion:geometry_msgs/Vector3:mir_msgs/ExternalRobots:mir_msgs/ResourceState:geometry_msgs/Twist:geometry_msgs/Point:mir_msgs/ExternalRobot"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg" "geometry_msgs/Twist:mir_msgs/ResourceState:std_msgs/Header:geometry_msgs/Vector3:geometry_msgs/Point:mir_msgs/ExternalRobots:geometry_msgs/Pose:mir_msgs/ExternalRobot:mir_msgs/ResourcesState:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg" NAME_WE)
 add_custom_target(_mir_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg" "std_msgs/Header:geometry_msgs/Pose:mir_msgs/ResourcesState:geometry_msgs/Quaternion:geometry_msgs/Vector3:mir_msgs/WorldMap:mir_msgs/ExternalRobots:mir_msgs/ResourceState:geometry_msgs/Twist:geometry_msgs/Point:mir_msgs/ExternalRobot"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mir_msgs" "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg" "geometry_msgs/Twist:mir_msgs/ResourceState:std_msgs/Header:geometry_msgs/Vector3:geometry_msgs/Point:mir_msgs/ExternalRobots:geometry_msgs/Pose:mir_msgs/ExternalRobot:mir_msgs/ResourcesState:geometry_msgs/Quaternion:mir_msgs/WorldMap"
 )
 
 #
@@ -377,19 +377,19 @@ _generate_msg_cpp(mir_msgs
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
@@ -419,7 +419,7 @@ _generate_msg_cpp(mir_msgs
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
@@ -497,13 +497,13 @@ _generate_msg_cpp(mir_msgs
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
@@ -539,13 +539,13 @@ _generate_msg_cpp(mir_msgs
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
@@ -563,7 +563,7 @@ _generate_msg_cpp(mir_msgs
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
@@ -641,13 +641,13 @@ _generate_msg_cpp(mir_msgs
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_cpp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mir_msgs
 )
 
@@ -858,19 +858,19 @@ _generate_msg_eus(mir_msgs
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
@@ -900,7 +900,7 @@ _generate_msg_eus(mir_msgs
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
@@ -978,13 +978,13 @@ _generate_msg_eus(mir_msgs
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
@@ -1020,13 +1020,13 @@ _generate_msg_eus(mir_msgs
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
@@ -1044,7 +1044,7 @@ _generate_msg_eus(mir_msgs
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
@@ -1122,13 +1122,13 @@ _generate_msg_eus(mir_msgs
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_eus(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mir_msgs
 )
 
@@ -1339,19 +1339,19 @@ _generate_msg_lisp(mir_msgs
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
@@ -1381,7 +1381,7 @@ _generate_msg_lisp(mir_msgs
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
@@ -1459,13 +1459,13 @@ _generate_msg_lisp(mir_msgs
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
@@ -1501,13 +1501,13 @@ _generate_msg_lisp(mir_msgs
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
@@ -1525,7 +1525,7 @@ _generate_msg_lisp(mir_msgs
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
@@ -1603,13 +1603,13 @@ _generate_msg_lisp(mir_msgs
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_lisp(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mir_msgs
 )
 
@@ -1820,19 +1820,19 @@ _generate_msg_nodejs(mir_msgs
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
@@ -1862,7 +1862,7 @@ _generate_msg_nodejs(mir_msgs
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
@@ -1940,13 +1940,13 @@ _generate_msg_nodejs(mir_msgs
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
@@ -1982,13 +1982,13 @@ _generate_msg_nodejs(mir_msgs
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
@@ -2006,7 +2006,7 @@ _generate_msg_nodejs(mir_msgs
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
@@ -2084,13 +2084,13 @@ _generate_msg_nodejs(mir_msgs
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_nodejs(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mir_msgs
 )
 
@@ -2301,19 +2301,19 @@ _generate_msg_py(mir_msgs
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
@@ -2343,7 +2343,7 @@ _generate_msg_py(mir_msgs
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
@@ -2421,13 +2421,13 @@ _generate_msg_py(mir_msgs
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
@@ -2463,13 +2463,13 @@ _generate_msg_py(mir_msgs
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
@@ -2487,7 +2487,7 @@ _generate_msg_py(mir_msgs
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg"
+  "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
@@ -2565,13 +2565,13 @@ _generate_msg_py(mir_msgs
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 _generate_msg_py(mir_msgs
   "/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mir_msgs
 )
 

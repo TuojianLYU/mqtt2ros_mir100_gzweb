@@ -183,33 +183,33 @@ mir_robot/mir_msgs/CMakeFiles/mir_msgs_generate_messages_cpp: /home/lyu/catkin_w
 /home/lyu/catkin_ws/devel/include/mir_msgs/Events.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/Events.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/Events.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/Events.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/Events.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/Events.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Event.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/Events.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from mir_msgs/Events.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Events.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobot.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from mir_msgs/ExternalRobot.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ExternalRobots.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from mir_msgs/ExternalRobots.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -241,9 +241,9 @@ mir_robot/mir_msgs/CMakeFiles/mir_msgs_generate_messages_cpp: /home/lyu/catkin_w
 
 /home/lyu/catkin_ws/devel/include/mir_msgs/HookExtendedStatus.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/HookExtendedStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/HookExtendedStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/HookExtendedStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/HookExtendedStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/GripperState.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/HookExtendedStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/BrakeState.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/HookExtendedStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HeightState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/HookExtendedStatus.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from mir_msgs/HookExtendedStatus.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookExtendedStatus.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -329,10 +329,10 @@ mir_robot/mir_msgs/CMakeFiles/mir_msgs_generate_messages_cpp: /home/lyu/catkin_w
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegment.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating C++ code from mir_msgs/PlanSegment.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -340,11 +340,11 @@ mir_robot/mir_msgs/CMakeFiles/mir_msgs_generate_messages_cpp: /home/lyu/catkin_w
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegment.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/PlanSegments.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating C++ code from mir_msgs/PlanSegments.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/PlanSegments.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -384,10 +384,10 @@ mir_robot/mir_msgs/CMakeFiles/mir_msgs_generate_messages_cpp: /home/lyu/catkin_w
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesAcquisition.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating C++ code from mir_msgs/ResourcesAcquisition.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesAcquisition.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -395,8 +395,8 @@ mir_robot/mir_msgs/CMakeFiles/mir_msgs_generate_messages_cpp: /home/lyu/catkin_w
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesState.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesState.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesState.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesState.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesState.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesState.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/ResourcesState.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating C++ code from mir_msgs/ResourcesState.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -415,15 +415,15 @@ mir_robot/mir_msgs/CMakeFiles/mir_msgs_generate_messages_cpp: /home/lyu/catkin_w
 
 /home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookStatus.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Error.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Pose2D.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/AngleMeasurment.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/HookData.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/UserPrompt.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Twist2D.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/Trolley.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/RobotStatus.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating C++ code from mir_msgs/RobotStatus.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/RobotStatus.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -505,33 +505,33 @@ mir_robot/mir_msgs/CMakeFiles/mir_msgs_generate_messages_cpp: /home/lyu/catkin_w
 
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldMap.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Generating C++ code from mir_msgs/WorldMap.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourcesState.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobots.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ResourceState.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/ExternalRobot.msg
 /home/lyu/catkin_ws/devel/include/mir_msgs/WorldModel.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lyu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Generating C++ code from mir_msgs/WorldModel.msg"
 	cd /home/lyu/catkin_ws/src/mir_robot/mir_msgs && /home/lyu/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldModel.msg -Imir_msgs:/home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mir_msgs -o /home/lyu/catkin_ws/devel/include/mir_msgs -e /opt/ros/noetic/share/gencpp/cmake/..

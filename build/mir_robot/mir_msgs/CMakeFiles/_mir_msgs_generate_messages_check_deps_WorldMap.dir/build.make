@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/lyu/catkin_ws/build
 include mir_robot/mir_msgs/CMakeFiles/_mir_msgs_generate_messages_check_deps_WorldMap.dir/progress.make
 
 mir_robot/mir_msgs/CMakeFiles/_mir_msgs_generate_messages_check_deps_WorldMap:
-	cd /home/lyu/catkin_ws/build/mir_robot/mir_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mir_msgs /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg std_msgs/Header:geometry_msgs/Pose:mir_msgs/ResourcesState:geometry_msgs/Quaternion:geometry_msgs/Vector3:mir_msgs/ExternalRobots:mir_msgs/ResourceState:geometry_msgs/Twist:geometry_msgs/Point:mir_msgs/ExternalRobot
+	cd /home/lyu/catkin_ws/build/mir_robot/mir_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mir_msgs /home/lyu/catkin_ws/src/mir_robot/mir_msgs/msg/WorldMap.msg geometry_msgs/Twist:mir_msgs/ResourceState:std_msgs/Header:geometry_msgs/Vector3:geometry_msgs/Point:mir_msgs/ExternalRobots:geometry_msgs/Pose:mir_msgs/ExternalRobot:mir_msgs/ResourcesState:geometry_msgs/Quaternion
 
 _mir_msgs_generate_messages_check_deps_WorldMap: mir_robot/mir_msgs/CMakeFiles/_mir_msgs_generate_messages_check_deps_WorldMap
 _mir_msgs_generate_messages_check_deps_WorldMap: mir_robot/mir_msgs/CMakeFiles/_mir_msgs_generate_messages_check_deps_WorldMap.dir/build.make

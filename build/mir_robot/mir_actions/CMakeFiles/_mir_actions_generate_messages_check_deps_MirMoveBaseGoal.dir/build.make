@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/lyu/catkin_ws/build
 include mir_robot/mir_actions/CMakeFiles/_mir_actions_generate_messages_check_deps_MirMoveBaseGoal.dir/progress.make
 
 mir_robot/mir_actions/CMakeFiles/_mir_actions_generate_messages_check_deps_MirMoveBaseGoal:
-	cd /home/lyu/catkin_ws/build/mir_robot/mir_actions && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mir_actions /home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseGoal.msg geometry_msgs/PoseStamped:mir_msgs/MirLocalPlannerPathTypes:std_msgs/Header:geometry_msgs/Pose:nav_msgs/Path:geometry_msgs/Pose2D:geometry_msgs/Quaternion:geometry_msgs/Point
+	cd /home/lyu/catkin_ws/build/mir_robot/mir_actions && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mir_actions /home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseGoal.msg geometry_msgs/Point:mir_msgs/MirLocalPlannerPathTypes:nav_msgs/Path:std_msgs/Header:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:geometry_msgs/Pose2D:geometry_msgs/Pose
 
 _mir_actions_generate_messages_check_deps_MirMoveBaseGoal: mir_robot/mir_actions/CMakeFiles/_mir_actions_generate_messages_check_deps_MirMoveBaseGoal
 _mir_actions_generate_messages_check_deps_MirMoveBaseGoal: mir_robot/mir_actions/CMakeFiles/_mir_actions_generate_messages_check_deps_MirMoveBaseGoal.dir/build.make

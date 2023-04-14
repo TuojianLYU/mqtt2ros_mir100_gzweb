@@ -34,7 +34,7 @@ def mir_status_publisher():
         pub.publish(mir_status)
 
         # Sleep to maintain the publishing rate
-        time.sleep(3)
+        time.sleep(1)
 
 if __name__ == '__main__':
     try:

@@ -96,7 +96,7 @@ class RosToMqttBridge(Bridge):
 
         else:
             payload = self._serialize(extract_values(msg))
-            rospy.loginfo("Serialized payload:%s", payload)
+            rospy.loginfo("Serialized payload:", payload)
 
         rospy.loginfo("final payload to publish: {}".format(payload))
         rospy.loginfo("type: {}".format(type(payload)))
