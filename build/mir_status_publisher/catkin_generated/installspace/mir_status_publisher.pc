@@ -1,0 +1,8 @@
+prefix=/home/lyu/catkin_ws/install
+
+Name: mir_status_publisher
+Description: Description of mir_status_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs

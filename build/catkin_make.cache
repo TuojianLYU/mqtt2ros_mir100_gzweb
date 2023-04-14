@@ -1,0 +1,2 @@
+mir_robot/mir_actions:mir_robot/mir_description:mir_robot/mir_driver:mir_robot/mir_dwb_critics:mir_robot/mir_gazebo:mir_robot/mir_msgs:mir_robot/mir_navigation:mir_robot/mir_robot:mir_robot/sdc21x0:mir_status_publisher:mqtt_bridge:mqtt_client
+-DCATKIN_DEVEL_PREFIX=/home/lyu/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lyu/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,2 @@
+set(mir_actions_MESSAGE_FILES "/home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseAction.msg;/home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseActionGoal.msg;/home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseActionResult.msg;/home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseActionFeedback.msg;/home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseGoal.msg;/home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseResult.msg;/home/lyu/catkin_ws/devel/share/mir_actions/msg/MirMoveBaseFeedback.msg")
+set(mir_actions_SERVICE_FILES "")
