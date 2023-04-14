@@ -11,7 +11,7 @@ def mir_input_callback(msg):
     global mir_status
     # Set /mir_status to the opposite of the input message
     mir_status.data = not msg.data
-    print(msg.data)
+    print("received /mir_input: " + str(msg.data))
 
 def mir_status_publisher():
     global mir_status
@@ -25,14 +25,11 @@ def mir_status_publisher():
     # Subscribe to the /mir_input topic
     rospy.Subscriber('/mir_input', Bool, mir_input_callback)
 
-    # Set the publishing rate
-    rate = rospy.Rate(10)  # 10 Hz
-
     # Loop until the node is terminated
     while not rospy.is_shutdown():
         # Publish the mir_status message
         pub.publish(mir_status)
-
+        print("publish /mir_status: " + str(mir_status))
         # Sleep to maintain the publishing rate
         time.sleep(1)
 

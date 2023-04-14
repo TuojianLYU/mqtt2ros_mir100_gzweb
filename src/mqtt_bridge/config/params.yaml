@@ -22,7 +22,7 @@ bridge:
     msg_type: std_msgs.msg:Bool
     topic_from: /mir_status
     topic_to: /mir_status_mqtt
-  - factory: mqtt_bridge.bridge:RosToMqttBridge
+  - factory: mqtt_bridge.bridge:MqttToRosBridge
     msg_type: std_msgs.msg:Bool
     topic_from: /mir_input_mqtt
     topic_to: /mir_input
